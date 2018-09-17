@@ -29,7 +29,8 @@ while True:
     for f in os.listdir(importDir):
         oldName = os.path.join(importDir, f)
         if f.endswith('daily_radfeedback_equip_report.csv'):
-            shutil.move(oldName, py.path.local(r'H:\EPIC Rad Feedback\incoming_epic_rad_reports'))
+            shutil.move(oldName, py.path.local(r'W:\SHARE8 Physics\Software\python\scripts\clahn\EPIC Rad Feedback\incoming_epic_rad_reports'))
+            # shutil.move(oldName, py.path.local(r'H:\EPIC Rad Feedback\incoming_epic_rad_reports'))
 
     # TRF Dexa Repeat Data.csv
     for f in os.listdir(importDir):
